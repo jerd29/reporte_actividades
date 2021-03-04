@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./sidebar.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="page-header">
+        <img style="width: 100%;" class="img_header" src="./cintillomin.jpg">
+
+    </div>
+
+    <div class="sidenav">
+        <div class="col text-center">
+            <i class="far fa-user-circle"></i>
+        </div>
+        <div class="col text-center">
+            <p class="sidebar_usern">Username</p>
+        </div>
+
+        <a href="#about">About</a>
+        <a href="#services">Editar <i class="far fa-edit"></i></a>
+        <a href="#clients">Historial <i class="fas fa-history"></i></a>
+        <a href="#contact">Salir <i class="fas fa-sign-out-alt"></i></a>
+    </div>
+
+    <div class="main">
+        <div class="row">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h2 class="text-center">Reporte De Actividades Diarias</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form col-sm-12 d-flex justify-content-center">
+            <form action="" class="col-sm-12">
+                <div class="card p-5 mt-2">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="dhcp">Requerimientos en el DHCP:</label>
+                                <input type="number" class="form-control w-50" id="dhcp">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="c_institucional">Requerimientos en Correo Institucional:</label>
+                                <input type="number" class="form-control w-50" id="c_institucional">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="entes_adsc">Requerimientos entes Adscritos:</label>
+                                <input type="number" class="form-control w-50" id="entes_adsc">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="ancho_b">Medicion del consumo Ancho de Banda:</label>
+                                <input type="number" class="form-control w-50" id="ancho_b">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="observ">Observaciones:</label>
+                        <textarea class="form-control" rows="5" id="observ"></textarea>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap4/js/bootstrap.min.js"></script>
+    <script src="./lib/jquery-3.4.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
